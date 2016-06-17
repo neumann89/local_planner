@@ -1,0 +1,29 @@
+TrajectoryPlannerROS:
+  max_vel_x: 1.90
+  min_vel_x: 0.0
+  max_vel_theta: 3.14
+  min_in_place_vel_theta: 1
+  acc_lim_theta: 1
+  acc_lim_x: 1.9
+  acc_lim_y: 0
+
+  holonomic_robot: false
+
+  meter_scoring: true
+# Goal tolerance. These two parameters allow you to make robot more or less accurate when reaching its goal. 
+# Be careful: very low values can make the robot move around the goal without reaching it!
+  xy_goal_tolerance: 0.1
+  yaw_goal_tolerance: 0.05
+
+#   Cost computing biases. These three parameters define the preference of TurtleBot when following its global plan:
+# path_distance_bias: increase to make the robot follow the plan more closely
+# goal_distance_bias: increase to make the robot trajectory smoother and more efficient
+# occdist_scale: increase to make the robot more afraid to hit obstacles
+
+path_distance_bias: 0.1
+goal_distance_bias: 0.1
+occdist_scale: 0.2
+
+
+dwa: true
+oscillation_reset_dist: 0.05

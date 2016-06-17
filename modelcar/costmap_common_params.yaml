@@ -1,0 +1,6 @@
+
+publish_frequency: 1.0
+footprint: [[-0.185, -0.095], [-0.185, 0.095], [0.185, 0.095], [0.185, -0.095]]
+inflation_radius: 0.01
+plugins: 
+    - {name: static_map,       type: "costmap_2d::StaticLayer"}
