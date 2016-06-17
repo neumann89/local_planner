@@ -62,9 +62,15 @@ Visualization Manager:
       Frame Timeout: 150
       Frames:
         All Enabled: true
+        base_footprint:
+          Value: true
+        base_laser_link:
+          Value: true
         base_link:
           Value: true
         map:
+          Value: true
+        odom:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -73,8 +79,11 @@ Visualization Manager:
       Show Names: true
       Tree:
         map:
-          base_link:
-            {}
+          odom:
+            base_footprint:
+              base_link:
+                base_laser_link:
+                  {}
       Update Interval: 1
       Value: true
     - Alpha: 0.7
@@ -211,5 +220,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1855
-  X: 1735
+  X: 55
   Y: 14
